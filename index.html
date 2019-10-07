@@ -1,0 +1,706 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGcj5aiX4UZjNdw-ane2U6hhle1hV0vCw" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+ <div class="mapdiv" id="map">
+ </div>
+
+<div class="locations-cont">
+
+	<a data-toggle="collapse" data-target="#britishcolumbia">
+		<div class="loc-header">
+	  		<h2 class="locations-h2">British Columbia</h2>
+	  	</div>
+	</a>
+
+  	<div id="britishcolumbia" class="collapse">
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Metropolis at Metrotown</td>
+		<td width="303"><div class="locmaplink" id="locnum29">4700 Kingsway, V5H4M1</div></td>
+		<td width="124">Burnaby</td>
+		<td width="115">604-438-6576</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Metropolis+at+Metrotown/@49.2261536,-123.0013072,17z/data=!3m1!4b1!4m5!3m4!1s0x548676595c5fb407:0x70139844bf95bfa5!8m2!3d49.2261501!4d-122.9991132" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Coquitlam Centre</td>
+		<td><div class="locmaplink" id="locnum30">2929 Barnet Hwy, V3B 5R5</div></td>
+		<td>Coquitlam</td>
+		<td width="115">604-472-0072</td>
+		<td><a href="https://www.google.ca/maps/place/Coquitlam+Centre/@49.2796046,-122.8006821,17z/data=!3m1!4b1!4m5!3m4!1s0x54867f336a5199bb:0x8593ed7b2ecba9d7!8m2!3d49.2796011!4d-122.7984881" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Orchard Park Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum31">2271 Harvey Ave, V1Y 6H2</div></td>
+		<td>Kelowna</td>
+		<td width="115">250-980-1215</td>
+		<td><a href="https://www.google.ca/maps/place/Orchard+Park+Shopping+Centre/@49.8802464,-119.4422236,17z/data=!3m1!4b1!4m5!3m4!1s0x537d8cc7df5895c7:0xc254ad56f3609f0d!8m2!3d49.880243!4d-119.4400296" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Willowbrook Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum32">19705 Fraser Highway, V3A 7E9</div></td>
+		<td>Langley</td>
+		<td>604-510-0477</td>
+		<td><a href="https://goo.gl/maps/ZPjVwTFRhUT2" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Woodgrove Centre</td>
+		<td><div class="locmaplink" id="locnum33">6631 Island Highway North, V9T4T7</div></td>
+		<td>Nanaimo</td>
+		<td>250-933-1022</td>
+		<td><a href="https://www.google.ca/maps/place/Woodgrove+Centre/@49.2365845,-124.0528271,17z/data=!3m1!4b1!4m5!3m4!1s0x548898c92b576861:0x7c8536f011afde52!8m2!3d49.236581!4d-124.0506331" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Pine Centre Mall</td>
+		<td><div class="locmaplink" id="locnum34">3055 Massey Dr, V2N2S9</div></td>
+		<td>Prince George</td>
+		<td width="115">250-563-7253</td>
+		<td><a href="https://www.google.ca/maps/place/Pine+Centre+Mall/@53.8977936,-122.7794957,17z/data=!3m1!4b1!4m5!3m4!1s0x53889915bb8f27fd:0x468d5710852dc72d!8m2!3d53.8977905!4d-122.7773017" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Guildford Town Centre</td>
+		<td><div class="locmaplink" id="locnum35">10355 152 St, V3R7C1</div></td>
+		<td>Surrey</td>
+		<td>604-584-0943</td>
+		<td><a href="https://www.google.ca/maps/place/Guildford+Town+Centre/@49.1898004,-122.8058693,17z/data=!3m2!4b1!5s0x5485d712b6081533:0x1e314697e81ae765!4m5!3m4!1s0x5485d76d2daf2b5b:0xcc58b66c4e13ca50!8m2!3d49.1897969!4d-122.8036753" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Tsawwassen Mills</td>
+		<td><div class="locmaplink" id="locnum36">5000 Canoe Pass Way, V4M 0B3</div></td>
+		<td>Tsawwassen</td>
+		<td width="115">604-940-4595</td>
+		<td><a href="https://www.google.ca/maps/place/Tsawwassen+Mills/@49.0381668,-123.0878966,17z/data=!3m1!4b1!4m5!3m4!1s0x5485e69393478ef1:0xc8559b6c1c5c3b57!8m2!3d49.0381633!4d-123.0857026" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Mayfair Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum37">3147 Douglas St, V8Z 6E3</div></td>
+		<td>Victoria</td>
+		<td>250-386-0579</td>
+		<td><a href="https://www.google.ca/maps/place/Mayfair+Shopping+Centre/@48.4469045,-123.371301,17z/data=!3m1!4b1!4m5!3m4!1s0x548f739d205abe3d:0x418b21bb4d278d8a!8m2!3d48.446901!4d-123.369107" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#alberta">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Alberta</h2>
+	  	</div>
+	</a>
+
+  	<div id="alberta" class="collapse">	
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">CF Chinook Centre</td>
+		<td width="303"><div class="locmaplink" id="locnum38">6455 Macleod Trail SW, T2H 0K9</div></td>
+		<td width="124">Calgary</td>
+		<td width="115">587-352-3992</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/CF+Chinook+Centre/@50.9984294,-114.075333,17z/data=!3m1!4b1!4m5!3m4!1s0x537170558c817a7b:0xa80ab79074859579!8m2!3d50.998426!4d-114.073139" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Market Mall</td>
+		<td><div class="locmaplink" id="locnum39">3625 Shaganappi Trail NW, T3A 0E2</div></td>
+		<td>Calgary</td>
+		<td>403-460-4334</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Market+Mall/@51.0847619,-114.1577324,17z/data=!3m1!4b1!4m5!3m4!1s0x53716f1dd552d43f:0x929f85129c2c11d3!8m2!3d51.0847586!4d-114.1555384" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Marlborough Mall</td>
+		<td><div class="locmaplink" id="locnum40">3800 Memorial Dr NE, T2A 2K2</div></td>
+		<td>Calgary</td>
+		<td>587-350-9001</td>
+		<td><a href="https://www.google.ca/maps/place/Marlborough+Mall+Administration/@51.055579,-113.9806705,17z/data=!3m1!4b1!4m5!3m4!1s0x4171908b14089a57:0xcc94ef6dffa0e9fe!8m2!3d51.0555756!4d-113.9784765" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Southcentre Mall</td>
+		<td><div class="locmaplink" id="locnum41">100 Anderson Rd SE, T2J 3V1</div></td>
+		<td>Calgary</td>
+		<td>403-726-5073</td>
+		<td><a href="https://www.google.ca/maps/place/Southcentre+Mall/@50.9529903,-114.0681122,17z/data=!3m1!4b1!4m5!3m4!1s0x537176cc82d44277:0x48b3bbdc69c05da9!8m2!3d50.9529869!4d-114.0659182" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Sunridge Mall</td>
+		<td><div class="locmaplink" id="locnum42">2525 36 St NE, T1Y 5T4</div></td>
+		<td>Calgary</td>
+		<td>587-623-9489</td>
+		<td><a href="https://www.google.ca/maps/place/Sunridge+Mall/@51.0745871,-113.9884704,17z/data=!3m1!4b1!4m5!3m4!1s0x537164c50a4979e7:0x173ca102f56ce815!8m2!3d51.0745838!4d-113.9862764" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Bonnie Doon Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum43">160 82nd Avenue &amp; 83rd St, T6C 2B1</div></td>
+		<td>Edmonton</td>
+		<td>587-458-4602</td>
+		<td><a href="https://www.google.ca/maps/place/Bonnie+Doon+Shopping+Centre/@53.5213639,-113.4590337,17z/data=!3m1!4b1!4m5!3m4!1s0x53a0227895770a99:0xc85d0c9c289d88ad!8m2!3d53.5213607!4d-113.4568397" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Londonderry Mall</td>
+		<td><div class="locmaplink" id="locnum44">137 Ave &amp; 66th St, T5C 3C8</div></td>
+		<td>Edmonton</td>
+		<td>780-670-4340</td>
+		<td><a href="https://www.google.ca/maps/place/Londonderry+Mall/@53.6024737,-113.4485025,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02348648c1e1f:0x3c89de92ca839a8!8m2!3d53.6024705!4d-113.4463085" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>West Edmonton Mall</td>
+		<td><div class="locmaplink" id="locnum45">8882 170th St, Unit 1392, T5T 4M2</div></td>
+		<td>Edmonton</td>
+		<td>780-444-4510</td>
+		<td><a href="https://www.google.ca/maps/place/West+Edmonton+Mall/@53.5225183,-113.6263846,17z/data=!3m1!4b1!4m5!3m4!1s0x53a020573a8614db:0x8546a29e09b26fcb!8m2!3d53.5225151!4d-113.6241906" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Kingsway Mall</td>
+		<td><div class="locmaplink" id="locnum46">1 Kingsway Garden Mall NW, T5G 3A6</div></td>
+		<td>Edmonton</td>
+		<td>780-752-6277</td>
+		<td><a href="https://www.google.ca/maps/place/Kingsway+Mall/@53.5626802,-113.50774,17z/data=!3m1!4b1!4m5!3m4!1s0x53a023b06ee8ae0f:0x20351f2ebaae4c0d!8m2!3d53.562677!4d-113.505546" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Peter Pond Mall</td>
+		<td><div class="locmaplink" id="locnum47">9713 Hardin St, T9H 1L2</div></td>
+		<td>Fort McMurray</td>
+		<td>780-743-8060</td>
+		<td><a href="https://www.google.ca/maps/place/Peter+Pond+Mall/@56.7249175,-111.3803574,17z/data=!3m1!4b1!4m5!3m4!1s0x53b008b47959f57d:0xa5bc64852c164c49!8m2!3d56.7249146!4d-111.3781634" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Prairie Mall Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum48">11801 100 St, T8V 3Y2</div></td>
+		<td>Grande Prairie</td>
+		<td>780-830-0383</td>
+		<td><a href="https://www.google.ca/maps/place/Prairie+Mall+Shopping+Centre/@55.1878003,-118.7942397,17z/data=!3m1!4b1!4m5!3m4!1s0x539096a99c2f812f:0x783bbfe889a99cb2!8m2!3d55.1877973!4d-118.7920457" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Park Place Mall</td>
+		<td><div class="locmaplink" id="locnum49">501 First Ave S, T1J 4L9</div></td>
+		<td>Lethbridge</td>
+		<td>403-388-4792</td>
+		<td><a href="https://www.google.ca/maps/place/Park+Place+Mall/@49.6986664,-112.842816,17z/data=!3m1!4b1!4m5!3m4!1s0x536e87cf3d264d53:0xc9acddfc9ab552fe!8m2!3d49.698663!4d-112.840622" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Medicine Hat Mall</td>
+		<td><div class="locmaplink" id="locnum50">3292 Dunmore Rd SE, T1B 2R4</div></td>
+		<td>Medicine Hat</td>
+		<td>403-525-6762</td>
+		<td><a href="https://www.google.ca/maps/place/Medicine+Hat+Mall/@50.0039683,-110.6494333,17z/data=!3m1!4b1!4m5!3m4!1s0x53132d9b0cf24667:0xd869c783490e350b!8m2!3d50.0039649!4d-110.6472393" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Bower Place</td>
+		<td><div class="locmaplink" id="locnum51">4900 Molly Banister Dr, T4R 1N9</div></td>
+		<td>Red Deer</td>
+		<td>587-457-0865</td>
+		<td><a href="https://www.google.ca/maps/place/Bower+Place/@52.2429118,-113.8117347,17z/data=!3m2!4b1!5s0x537456be0ff32625:0x258fe8fc58ae12b0!4m5!3m4!1s0x537456be05baab7f:0x4aac043fc82c0e81!8m2!3d52.2429085!4d-113.8095407" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Crossiron Mills</td>
+		<td><div class="locmaplink" id="locnum52">261055 Crossiron Blvd, T4A 0G3</div></td>
+		<td>Rocky View 44</td>
+		<td>587-535-4878</td>
+		<td><a href="https://www.google.ca/maps/place/CrossIron+Mills/@51.203066,-113.9956265,17z/data=!3m1!4b1!4m5!3m4!1s0x537160f09e6e81b1:0x843c16e35ccf7522!8m2!3d51.2030627!4d-113.9934325" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#saskatchewan">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Saskatchewan</h2>
+	  	</div>
+	</a>
+
+  	<div id="saskatchewan" class="collapse">	
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Cornwall Centre</td>
+		<td width="303"><div class="locmaplink" id="locnum53">2102 11th Ave, S4P 3Y6</div></td>
+		<td width="124">Regina</td>
+		<td width="115">306-545-3300</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Lawson+Heights+Mall/@52.1686909,-106.6418765,17z/data=!3m1!4b1!4m5!3m4!1s0x5304f67dc5d97853:0x3a0cd1bf32ee9b3c!8m2!3d52.1686876!4d-106.6396825" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Southland Mall</td>
+		<td><div class="locmaplink" id="locnum54">2965 Gordon Rd, S4S 6H7</div></td>
+		<td>Regina</td>
+		<td>306-525-2228</td>
+		<td><a href="https://www.google.ca/maps/place/Southland+Mall/@50.4031966,-104.6247229,17z/data=!3m1!4b1!4m5!3m4!1s0x531ea0b4d1a074bb:0x5616fbfab9604d4c!8m2!3d50.4031932!4d-104.6225289" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Lawson Heights Mall</td>
+		<td><div class="locmaplink" id="locnum55">134 Primrose Dr, Saskatoon, SK S7K 5S6</div></td>
+		<td>Saskatoon</td>
+		<td>306-955-9984</td>
+		<td><a href="https://www.google.ca/maps/place/Lawson+Heights+Mall/@52.1686909,-106.6418765,17z/data=!3m1!4b1!4m5!3m4!1s0x5304f67dc5d97853:0x3a0cd1bf32ee9b3c!8m2!3d52.1686876!4d-106.6396825" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Midtown Plaza</td>
+		<td><div class="locmaplink" id="locnum56">201 First Ave S, S7K 1J9</div></td>
+		<td>Saskatoon</td>
+		<td>306-955-9904</td>
+		<td><a href="https://www.google.ca/maps/place/Midtown/@52.1275913,-106.669703,17z/data=!3m1!4b1!4m5!3m4!1s0x5304f6d62ddc2579:0x5996ff913f26f813!8m2!3d52.127588!4d-106.667509" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#manitoba">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Manitoba</h2>
+	  	</div>
+	</a>
+
+  	<div id="manitoba" class="collapse">	
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Kildonan Place</td>
+		<td width="303"><div class="locmaplink" id="locnum57">1555 Regent Ave W, R2C 3B3</div></td>
+		<td width="124">Winnipeg</td>
+		<td width="115">204-421-6220</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Kildonan+Place/@49.8986384,-97.06416,17z/data=!3m1!4b1!4m5!3m4!1s0x52ea70bad6bef04d:0x6ae1873e2a14ed8b!8m2!3d49.898635!4d-97.061966" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Polopark Mall</td>
+		<td><div class="locmaplink" id="locnum58">1485 Portage Ave, R3G 0W4</div></td>
+		<td>Winnipeg</td>
+		<td>204-272-2939</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Polo+Park/@49.8837964,-97.2011545,17z/data=!3m1!4b1!4m5!3m4!1s0x52ea7378e9852513:0x5866ac4923e5d48f!8m2!3d49.883793!4d-97.1989605" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>St. Vital Centre</td>
+		<td><div class="locmaplink" id="locnum59">86-1225 St Mary's Rd, R2M 5E5</div></td>
+		<td>Winnipeg</td>
+		<td>204-505-1123</td>
+		<td><a href="https://goo.gl/maps/8JaVx15KzrL2" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#ontario">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Ontario</h2>
+	  	</div>
+	</a>
+  	
+  	<div id="ontario" class="collapse">	
+
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Bayfield Mall</td>
+		<td width="303"><div class="locmaplink" id="locnum3">320 Bayfield St, L4M 3C1</div></td>
+		<td width="124">Barrie</td>
+		<td width="115">705-730-5680</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Bayfield+Mall/@44.4006748,-79.705612,17z/data=!3m1!4b1!4m5!3m4!1s0x882aa2de848b5479:0x48f798bca4af8249!8m2!3d44.400671!4d-79.703418" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Quinte Mall</td>
+		<td><div class="locmaplink" id="locnum4">390 N Front St, K8P 3E1</div></td>
+		<td>Belleville</td>
+		<td>613-969-1396</td>
+		<td><a href="https://www.google.ca/maps/place/Quinte+Mall/@44.1888816,-77.4036153,17z/data=!3m1!4b1!4m5!3m4!1s0x89d6257542e73c4f:0x3c9e9e6b65067b6c!8m2!3d44.1888778!4d-77.4014213" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Bramalea City Centre</td>
+		<td><div class="locmaplink" id="locnum5">25 Peel Centre Dr, L6T 3R5</div></td>
+		<td>Brampton</td>
+		<td>905-793-0488</td>
+		<td><a href="https://www.google.ca/maps/place/Bramalea+City+Centre/@43.7151819,-79.724441,17z/data=!3m2!4b1!5s0x882b3de691bd9163:0xb825fcec0e7ddec0!4m5!3m4!1s0x882b3de423425cf1:0x78ed4319f3c32f8a!8m2!3d43.715178!4d-79.722247" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Lynden Park Mall</td>
+		<td><div class="locmaplink" id="locnum6">84 Lynden Road, N3R 6B8</div></td>
+		<td>Brantford</td>
+		<td>519-756-8722</td>
+		<td><a href="https://www.google.ca/maps/place/Lynden+Park+Mall/@43.1710578,-80.2423579,17z/data=!3m1!4b1!4m5!3m4!1s0x882c65b1b3f75e19:0x86273b24b13fd2d2!8m2!3d43.1710539!4d-80.2401639" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td id ="locnum0">Cambridge Centre</td>
+		<td><div class="locmaplink" id="locnum1">355 Hespeler Rd, N1R 6B3</div></td>
+		<td>Cambridge</td>
+		<td>519-622-4768</td>
+		<td><a href="https://www.google.ca/maps/place/Cambridge+Centre/@43.3931244,-80.3218871,17z/data=!3m1!4b1!4m5!3m4!1s0x882b883315d65e15:0xdd9962d43d55419b!8m2!3d43.3931205!4d-80.3196931" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Cloverdale Mall</td>
+		<td><div class="locmaplink" id="locnum7">250 East Malls Hwy, M9B 3Y8</div></td>
+		<td>Etobicoke</td>
+		<td>416-236-9891</td>
+		<td><a href="https://www.google.ca/maps/place/Cloverdale+Mall/@43.6315582,-79.5574594,17z/data=!3m1!4b1!4m5!3m4!1s0x882b375ba373db19:0x9cd556705f54a978!8m2!3d43.6315543!4d-79.5552654" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Sherway Gardens</td>
+		<td><div class="locmaplink" id="locnum8">25 Sherway Gardens Rd, M9C 1B8</div></td>
+		<td>Etobicoke</td>
+		<td>416-621-9681</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Sherway+Gardens/@43.6119639,-79.559238,17z/data=!3m1!4b1!4m5!3m4!1s0x882b4806de464d0d:0x231db41dd5d2cc91!8m2!3d43.61196!4d-79.557044" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Stone Road Mall</td>
+		<td><div class="locmaplink" id="locnum9">435 Stone Road W, N1G 2X6</div></td>
+		<td>Guelph</td>
+		<td>519-780-2667</td>
+		<td><a href="https://www.google.ca/maps/place/Stone+Road+Mall/@43.5185676,-80.2401279,17z/data=!3m1!4b1!4m5!3m4!1s0x882b8528d224e355:0x6afdb12341c2e98d!8m2!3d43.5185637!4d-80.2379339" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Limeridge Mall</td>
+		<td><div class="locmaplink" id="locnum13">999 Upper Wentworth St, L9A 4X5</div></td>
+		<td>Hamilton</td>
+		<td>905-385-2325</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Lime+Ridge/@43.2177364,-79.8635136,17z/data=!3m1!4b1!4m5!3m4!1s0x882c9a4feb04ee4b:0x65bc8594f907987c!8m2!3d43.2177325!4d-79.8613196" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Fairview Park <strong>TEMPORARILY CLOSED - REOPENING MAY 2019 </strong></td>
+		<td><div class="locmaplink" id="locnum10">2960 Kingsway Dr, N2C 1X1</div></td>
+		<td>Kitchener</td>
+		<td>519-748-2230</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Fairview+Park/@43.4233619,-80.440668,17z/data=!3m1!4b1!4m5!3m4!1s0x882b8adeeabcd437:0x7554c8c56ed5c681!8m2!3d43.423358!4d-80.438474" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Masonville Place</td>
+		<td><div class="locmaplink" id="locnum11">1680 Richmond St, N6G 3Y9</div></td>
+		<td>London</td>
+		<td>519-673-4640</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Masonville+Place/@43.0254146,-81.2809092,17z/data=!3m1!4b1!4m5!3m4!1s0x882eee4350a72e43:0xcb7dd9faacadb9d1!8m2!3d43.0254107!4d-81.2787152" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>White Oaks Mall</td>
+		<td><div class="locmaplink" id="locnum12">1105 Wellington Rd, N6E 1V4</div></td>
+		<td>London</td>
+		<td>519-649-4493</td>
+		<td><a href="https://www.google.ca/maps/place/White+Oaks+Mall/@42.9316869,-81.22534,17z/data=!3m1!4b1!4m5!3m4!1s0x882ef3969b1d4b2f:0x5d395a6859572673!8m2!3d42.931683!4d-81.223146" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Upper Canada Mall</td>
+		<td><div class="locmaplink" id="locnum14">17600 Younge St, L3Y 4Z1</div></td>
+		<td>Newmarket</td>
+		<td>905-953-9881</td>
+		<td><a href="https://www.google.ca/maps/place/Upper+Canada+Mall/@44.0561322,-79.4866551,17z/data=!3m1!4b1!4m5!3m4!1s0x882ad1e59c8877a3:0x9a067c3b1ae483a0!8m2!3d44.0561284!4d-79.4844611" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Northgate Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum15">1500 Fisher St, P1B 2H3</div></td>
+		<td>North Bay</td>
+		<td>705-495-4017</td>
+		<td><a href="https://www.google.ca/maps/place/Northgate+Shopping+Centre/@46.3150927,-79.4429232,17z/data=!3m1!4b1!4m5!3m4!1s0x4d29aaebb96ee67b:0x35efc1e0fb4c0cd4!8m2!3d46.315089!4d-79.4407292" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Place D'Orléans</td>
+		<td><div class="locmaplink" id="locnum16">110 Place D'Orleans Dr, K1C 2L9</div></td>
+		<td>Orleans</td>
+		<td>613-824-9347</td>
+		<td><a href="https://www.google.ca/maps/place/Place+D%E2%80%99Orl%C3%A9ans/@45.4778871,-75.5182048,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce117f04b5695d:0xfb9c2a4398053539!8m2!3d45.4778834!4d-75.5160108" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Bayshore Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum2">100 Bayshore Dr, K2B 8C1</div></td>
+		<td>Ottawa</td>
+		<td>613-726-3345</td>
+		<td><a href="https://goo.gl/maps/U2qDF4zi94E2" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Carlingwood Mall</td>
+		<td><div class="locmaplink" id="locnum17">2121 Carling Ave, K2A 1H2</div></td>
+		<td>Ottawa</td>
+		<td>613-792-3865</td>
+		<td><a href="https://www.google.ca/maps/place/Carlingwood+Shopping+Centre/@45.3728594,-75.7727898,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce06cbf5c1544b:0x955e0a7f94398a44!8m2!3d45.3728557!4d-75.7705958" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Rideau Centre</td>
+		<td><div class="locmaplink" id="locnum27">50 Rideau St, K1N 9J7</div></td>
+		<td>Ottawa</td>
+		<td>613-234-2394</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Rideau+Centre/@45.4251014,-75.6934437,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce05010b10aa09:0xadb5eb264eeb2625!8m2!3d45.4250977!4d-75.6912497" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>St. Laurent Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum18">1200 St Laurent Blvd, K1K 3B8</div></td>
+		<td>Ottawa</td>
+		<td>613-746-4771</td>
+		<td><a href="https://www.google.ca/maps/place/St.+Laurent/@45.4222007,-75.6413765,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0f868f4d47b3:0xf3b180c9d003a695!8m2!3d45.422197!4d-75.6391825" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Heritage Place</td>
+		<td><div class="locmaplink" id="locnum19">1350 16th St E, N4K 6N7</div></td>
+		<td>Owen Sound</td>
+		<td>519-376-0217</td>
+		<td><a href="https://www.google.ca/maps/place/Heritage+Place/@45.4215271,-75.7015639,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce04550b1457a7:0x66a85a0082de2dc9!8m2!3d45.4215234!4d-75.6993699" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Lansdowne Mall</td>
+		<td><div class="locmaplink" id="locnum20">645 Lansdowne St, K9J 7Y5</div></td>
+		<td>Peterborough</td>
+		<td>705-750-1632</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Rideau+Centre/@45.4251014,-75.6934437,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce05010b10aa09:0xadb5eb264eeb2625!8m2!3d45.4250977!4d-75.6912497" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Pickering Town Centre</td>
+		<td><div class="locmaplink" id="locnum21">1355 Kingston Rd, L1V 1B8</div></td>
+		<td>Pickering</td>
+		<td>905-420-7069</td>
+		<td><a href="https://www.google.ca/maps/place/Pickering+Town+Centre/@43.8357646,-79.088593,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4dee0965528c7:0xc42b8b71ba81a8d7!8m2!3d43.8357608!4d-79.086399" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Station Mall</td>
+		<td><div class="locmaplink" id="locnum22">293 Bay St, P6A 1X3</div></td>
+		<td>Sault Ste. Marie</td>
+		<td>705-256-6111</td>
+		<td><a href="https://www.google.ca/maps/place/Station+Mall/@46.5128175,-84.3412384,17z/data=!3m1!4b1!4m5!3m4!1s0x4d3639c9beddaf11:0x1e80c7e22edd44c2!8m2!3d46.5128138!4d-84.3390444" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Scarborough Town Centre</td>
+		<td><div class="locmaplink" id="locnum23">300 Borough Dr, M1P 4P5</div></td>
+		<td>Scarborough</td>
+		<td>416-290-5841</td>
+		<td><a href="https://www.google.ca/maps/place/Scarborough+Town+Centre/@43.7753233,-79.2600568,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4d1a63c9c28db:0xd147ec9870be00a3!8m2!3d43.7753194!4d-79.2578681?hl=en" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>The Pen Centre</td>
+		<td><div class="locmaplink" id="locnum24">221 Glendale Ave, L2T 2K9</div></td>
+		<td>St. Catharines</td>
+		<td>905-682-7729</td>
+		<td><a href="https://www.google.ca/maps/place/The+Pen+Centre/@43.1356608,-79.2276021,17z/data=!3m1!4b1!4m5!3m4!1s0x89d350225fae1995:0x1a360763bccd35c2!8m2!3d43.1356569!4d-79.2254081" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>New Sudbury Centre</td>
+		<td><div class="locmaplink" id="locnum25">1349 Lasalle Blvd, P3A 1Z2</div></td>
+		<td>Sudbury</td>
+		<td>705-525-0262</td>
+		<td><a href="https://www.google.ca/maps/place/New+Sudbury+Centre/@46.5198263,-80.9491463,17z/data=!3m1!4b1!4m5!3m4!1s0x4d2f009dd6b06c91:0x2417d89f78cf8ddb!8m2!3d46.5198226!4d-80.9469523" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Dufferin Mall</td>
+		<td><div class="locmaplink" id="locnum84">900 Dufferin St, M6H 4A9</div></td>
+		<td>Toronto</td>
+		<td>647-954-1477</td>
+		<td><a href="https://goo.gl/maps/Ce1fen5heRtANxL99" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Intercity Shopping Centre</td>
+		<td><div class="locmaplink" id="locnum26">1000 Fort William Rd, P7B 6B9</div></td>
+		<td>Thunder Bay</td>
+		<td>807-345-2112</td>
+		<td><a href="https://www.google.ca/maps/place/Intercity+Shopping+Centre/@48.4028042,-89.2460929,17z/data=!3m1!4b1!4m5!3m4!1s0x4d5921fbb50ede4f:0xe337a4c5ae466891!8m2!3d48.4028007!4d-89.2438989" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Devonshire Mall</td>
+		<td><div class="locmaplink" id="locnum28">3100 Howard Ave, N8X 3Y8</div></td>
+		<td>Windsor</td>
+		<td>519-967-1806</td>
+		<td><a href="https://www.google.ca/maps/place/Devonshire+Mall/@42.2749059,-83.004267,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c0dc6f76d99:0xffb5dac0f54be5d1!8m2!3d42.274902!4d-83.002073" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#quebec">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Québec</h2>
+	  	</div>
+	</a>
+
+  	<div id="quebec" class="collapse">	
+
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Place du Royaume</td>
+		<td width="303"><div class="locmaplink" id="locnum60">1401 Boulevard Talbot, G7H 5N6</div></td>
+		<td width="124">Chicoutimi</td>
+		<td width="115">418-545-4612</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Place+du+Royaume/@48.4045315,-71.057762,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc020da03c58e55:0xb7bf4cbc88dd82ca!8m2!3d48.404528!4d-71.055568" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Les Promenades Drummondville</td>
+		<td><div class="locmaplink" id="locnum61">755 Boulevard Rene-Levesque, J2C 6Y7</div></td>
+		<td>Drummondville</td>
+		<td>819-474-6600</td>
+		<td><a href="https://www.google.ca/maps/place/Promenades+Drummondville/@45.8994615,-72.5198064,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc813cb4e1c02ed:0xcca313f79fee46aa!8m2!3d45.8994578!4d-72.5176124" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Les Promenades Gatineau</td>
+		<td><div class="locmaplink" id="locnum62">1100 Boulevard Maloney Quest, J8T 6G3</div></td>
+		<td>Gatineau</td>
+		<td>819-568-2902</td>
+		<td><a href="https://www.google.ca/maps/place/Les+Promenades+Gatineau/@45.4765305,-75.6988235,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce1b3e341aa68f:0x79e7e28cbfae77b!8m2!3d45.4765268!4d-75.6966295" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Les Galeries de Hull</td>
+		<td><div class="locmaplink" id="locnum63">320 Boulevard Saint-Joseph, J8Y 3Y8</div></td>
+		<td>Gatineau</td>
+		<td>819-778-3290</td>
+		<td><a href="https://www.google.ca/maps/place/Les+Galeries+de+Hull/@45.4414153,-75.7341193,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce049ea0bfbddf:0xaca6b1599b925a76!8m2!3d45.4414116!4d-75.7319253" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Carrefour Angrignon</td>
+		<td><div class="locmaplink" id="locnum64">7077 Newman Blvd, H8N 1X1</div></td>
+		<td>Lasalle</td>
+		<td>514-366-8395</td>
+		<td><a href="https://www.google.ca/maps/place/Carrefour+Angrignon/@45.4476483,-73.6177455,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc910df050654ad:0x4910571272a58ed1!8m2!3d45.4476446!4d-73.6155515" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Les Galeries Chagnon</td>
+		<td><div class="locmaplink" id="locnum66">1200 Boulevard Alphonse-Desjardins, G6V 6Y8</div></td>
+		<td>Levis</td>
+		<td>418-837-2718</td>
+		<td><a href="https://www.google.ca/maps/place/Les+Galeries+Chagnon/@46.796357,-71.1738497,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb895a84e43c7b5:0x4c6a351f55bd49a5!8m2!3d46.7963533!4d-71.1716557" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Place Versailles</td>
+		<td><div class="locmaplink" id="locnum67">7275 Sherbrooke St E, H1N 1E9</div></td>
+		<td>Montréal</td>
+		<td>514-354-7442</td>
+		<td><a href="https://www.google.ca/maps/place/Place+Versailles/@45.5917934,-73.5440964,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc91dcd77901487:0x702509d946cf0ef8!8m2!3d45.5917897!4d-73.5419077" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Fairview Pointe Claire</td>
+		<td><div class="locmaplink" id="locnum68">6815 Trans Canadian Hwy, H9R 5J1</div></td>
+		<td>Pointe-Claire</td>
+		<td>514-695-5861</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Fairview+Pointe+Claire/@45.4639573,-73.8335567,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93c710a3e80e9:0xe76452aef8b2f17!8m2!3d45.4639536!4d-73.8313627" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Fleur de Lys Centre Commercial</td>
+		<td><div class="locmaplink" id="locnum69">550 Wilfrid-Hamel Blvd, G1M 2S6</div></td>
+		<td>Quebec City</td>
+		<td>418-523-4426</td>
+		<td><a href="https://www.google.ca/maps/place/Fleur+de+Lys+centre+commercial/@46.8230073,-71.2545338,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb89646e498cafd:0x432316520c2e57e6!8m2!3d46.8230037!4d-71.2523398" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Laurier Québec</td>
+		<td><div class="locmaplink" id="locnum70">2700 Boulevard Laurier, G1V 2L8</div></td>
+		<td>Quebec City</td>
+		<td>418-657-2804</td>
+		<td><a href="https://www.google.ca/maps/place/Laurier+Qu%C3%A9bec/@46.7707761,-71.2873535,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb896cd6b352601:0xf2aec0269631d7d8!8m2!3d46.7707724!4d-71.2851595" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Galeries Rive Nord</td>
+		<td><div class="locmaplink" id="locnum71">100 Boulevard Brien, J6A 5N4</div></td>
+		<td>Repentigny</td>
+		<td>450-585-9664</td>
+		<td><a href="https://www.google.ca/maps/place/Galeries+Rive+Nord/@45.7426737,-73.460432,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc8e5dbc57a2e11:0x3137642a6d3483b6!8m2!3d45.74267!4d-73.458238" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Place Rosemère</td>
+		<td><div class="locmaplink" id="locnum72">401 Boul Labelle, J7A 3T2</div></td>
+		<td>Rosemère</td>
+		<td>450-437-5201</td>
+		<td><a href="https://www.google.ca/maps/place/Place+Rosem%C3%A8re/@45.6312917,-73.819381,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc927b3bb592b8b:0xbf8d7b92a9dd0eca!8m2!3d45.631288!4d-73.817187" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Carrefour du Nord</td>
+		<td><div class="locmaplink" id="locnum73">900 Boulevard Grignon, J7Y 3S7</div></td>
+		<td>Saint-Jerome</td>
+		<td>450-436-1048</td>
+		<td><a href="https://www.google.ca/maps/place/Carrefour+du+Nord/@45.7939297,-74.020309,17z/data=!3m1!4b1!4m5!3m4!1s0x4ccf2cf3271a0db5:0xc631b8abbda64cfd!8m2!3d45.793926!4d-74.018115" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Carrefour de L'Estrie</td>
+		<td><div class="locmaplink" id="locnum74">3050 De Portland Boul J1L1K1</div></td>
+		<td>Sherbrooke</td>
+		<td> 819-933-7900</td>
+		<td><a href="https://www.google.ca/maps/place/Carrefour+de+l'Estrie/@45.4014323,-71.9549219,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb7b495aab42421:0x7eac662b8af03566!8m2!3d45.4014286!4d-71.9527279" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Promenades St-Bruno</td>
+		<td><div class="locmaplink" id="locnum75">135 Boulevard des Promenades, J3V 5K3</div></td>
+		<td>St-Bruno-de-Montarville</td>
+		<td>450-653-5681</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Promenades+St-Bruno/@45.5045307,-73.3804103,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9069935b7bcfb:0xebbbbb6c58debc19!8m2!3d45.504527!4d-73.3782163" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Centre Commercial Les Rivières</td>
+		<td><div class="locmaplink" id="locnum76">4125 Boulevard des Forges, G8Y 1W1</div></td>
+		<td>Trois-Rivieres</td>
+		<td>819-693-6855</td>
+		<td><a href="https://www.google.ca/maps/place/Centre+commercial+Les+Rivi%C3%A8res/@46.3563301,-72.5914616,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc7c8d96f88609b:0xea5fd9ac581545fb!8m2!3d46.3563264!4d-72.5892676" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>La Grande Place des Bois-Francs</td>
+		<td><div class="locmaplink" id="locnum77">1111 Boulevard Jutras E, G6S 1C1</div></td>
+		<td>Victoriaville</td>
+		<td>819-357-2000</td>
+		<td><a href="https://www.google.ca/maps/place/La+grande+place+des+Bois-Francs/@46.05913,-71.9301153,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb803c0445087c5:0x1cdac232a89b9e86!8m2!3d46.0591263!4d-71.9279213" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Galeries De La Capitale</td>
+		<td><div class="locmaplink" id="locnum78">5401 Boulevard des Galeries, G2K 1N4</div></td>
+		<td>Ville de Quebec</td>
+		<td>418-624-8873</td>
+		<td><a href="https://www.google.ca/maps/place/Galeries+de+la+Capitale/@46.8303801,-71.3016501,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb897935bf95931:0xc3225bff1b0a6dd3!8m2!3d46.8303765!4d-71.2994561" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<a data-toggle="collapse" data-target="#atlantic">
+		<div class="loc-header">
+		  	<h2 class="locations-h2">Atlantic Canada</h2>
+	  	</div>
+	</a>
+
+  	<div id="atlantic" class="collapse">	
+		<table>
+		<tbody>
+		<tr>
+		<td width="227">Mic Mac Mall</td>
+		<td width="303"><div class="locmaplink" id="locnum79">21 Micmac Blvd, B3A 4K7</div></td>
+		<td width="124">Dartmouth, NS</td>
+		<td width="115">902-463-3410</td>
+		<td width="117"><a href="https://www.google.ca/maps/place/Mic+Mac+Mall/@44.6864692,-63.5620582,17z/data=!3m1!4b1!4m5!3m4!1s0x4b5a26aa2ce4794f:0x812bf6b7a881ba21!8m2!3d44.6864654!4d-63.5598642" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>CF Champlain</td>
+		<td><div class="locmaplink" id="locnum80">477 Paul St, E1A 4X5</div></td>
+		<td>Dieppe, NB</td>
+		<td width="115">506-852-3292</td>
+		<td><a href="https://www.google.ca/maps/place/CF+Champlain/@46.0959817,-64.7629141,17z/data=!3m1!4b1!4m5!3m4!1s0x4ca0b94ad751c7b3:0x986bb3c0aa5abc52!8m2!3d46.095978!4d-64.7607201" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Regent Mall</td>
+		<td><div class="locmaplink" id="locnum81">1381 Regent St, E3C 1A2</div></td>
+		<td>Fredericton, NB</td>
+		<td>506-447-9677</td>
+		<td><a href="https://www.google.ca/maps/place/Regent+Mall/@45.9351416,-66.6654545,17z/data=!3m1!4b1!4m5!3m4!1s0x4ca42239a1d984df:0xa4c547fce95cebc0!8m2!3d45.9351379!4d-66.6632605" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>McAllister Place</td>
+		<td><div class="locmaplink" id="locnum82">519 Westmorland Rd, E2J 3W9</div></td>
+		<td>Saint John, NB</td>
+		<td>506-632-0480</td>
+		<td><a href="https://www.google.ca/maps/place/McAllister+Place/@45.3068388,-66.018037,17z/data=!3m1!4b1!4m5!3m4!1s0x4ca7b257ba4689c5:0x5c2396805de98251!8m2!3d45.306835!4d-66.015843" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		<tr>
+		<td>Avalon Mall</td>
+		<td><div class="locmaplink" id="locnum83">48 Kenmount Rd, A1B 1W3</div></td>
+		<td>St. John's, NL</td>
+		<td>709-552-1902</td>
+		<td><a href="https://www.google.ca/maps/place/Avalon+Mall/@47.5605559,-52.7563291,17z/data=!3m1!4b1!4m5!3m4!1s0x4b0ca3797540e0cf:0x14de3b2f5e7f06f9!8m2!3d47.5605523!4d-52.7541351" target="_blank" rel="noopener">DIRECTIONS</a></td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
